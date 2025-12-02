@@ -15,10 +15,10 @@ useEffect(()=>{
 },[])
 
 
-const Handle=(e)=>{
+// const Handle=(e)=>{
 
-    setInput(e.target.value)
-}
+//     setInput(e.target.value)
+// }
 
 const Oncliking=()=>{
 
@@ -28,7 +28,7 @@ const Oncliking=()=>{
 
 
         <div>
-            <input   placeholder="enter the data"   onChange={Handle}/>
+            <input   placeholder="enter the data"   onChange={(e)=>setInput(e.target.value)}/>
             <button  onClick={Oncliking}> on click </button>
             <h1> Api Integration </h1>
             {
